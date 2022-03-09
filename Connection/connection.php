@@ -3,7 +3,7 @@
 date_default_timezone_set('Asia/Kolkata');
 $dbuser="root";
 $dbpass="druva@101092";
-$dbname="DB-Inclination";  //the name of the database
+$dbname="inclination";  //the name of the database
 $host="localhost";
 
 $conn = mysqli_connect($host,$dbuser,$dbpass,$dbname);
