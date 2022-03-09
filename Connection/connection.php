@@ -2,7 +2,7 @@
 <?php
 date_default_timezone_set('Asia/Kolkata');
 $dbuser="root";
-$dbpass="druva@101092";
+$dbpass="indiaNetiapps231$$";
 $dbname="inclination";  //the name of the database
 $host="localhost";
 
