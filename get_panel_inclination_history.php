@@ -40,6 +40,7 @@ while($rows=mysqli_fetch_assoc($systemdata))
 	$userdata["panel_inclination_angle_2"]=$rows['panel_inclination_angle_2'];
 	$userdata["updater_empl_id"]=$rows['updater_empl_id'];
 	$userdata["time"]=$rows['time'];
+    $userdata["manaualentry"]=$rows['manualentry'];
 
 	array_push($statusarray['info'], $userdata);
 

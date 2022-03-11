@@ -1,4 +1,3 @@
-
 <?php
 
 include('Connection/connection.php'); // database connection 
@@ -12,10 +11,12 @@ $inclination_angle_1=$_POST['inclination_angle_1'];
 $inclination_angle_2=$_POST['inclination_angle_2'];
 $updater_empl_id=$_POST['updater_empl_id'];
 $location=$_POST['location'];
+$manualentry=$_POST['ismanualentry'];
 $time=date("Y-m-d h:i");
 
 
-$insertdata=mysqli_query($conn,"INSERT INTO `solar_panel_inclination_data`(`solar_panel_id`, `solar_panel_name`, `panel_inclination_angle_1`, `panel_inclination_angle_2`, `updater_empl_id`, `time`, `location`) VALUES ('$solar_panel_id','$solar_panel_name','$inclination_angle_1','$inclination_angle_2','$updater_empl_id','$time','$location')");
+
+$insertdata=mysqli_query($conn,"INSERT INTO `solar_panel_inclination_data`(`solar_panel_id`, `solar_panel_name`, `panel_inclination_angle_1`, `panel_inclination_angle_2`, `updater_empl_id`, `time`, `location`,`manualentry`) VALUES ('$solar_panel_id','$solar_panel_name','$inclination_angle_1','$inclination_angle_2','$updater_empl_id','$time','$location','$manualentry')");
 
 
 if(mysqli_affected_rows($conn)>0)
